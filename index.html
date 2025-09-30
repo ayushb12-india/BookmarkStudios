@@ -2,52 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a form for BookmarkStudios to access useful websites on PC directly">
-    <title>Form-for BookmarkStudios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List styles</title>
 </head>
-<link rel="stylesheet" href="style2.css">
+<style>
+  html {
+    font-size: 16px;
+    font-family: cursive;
+  }
+
+  nav>ul li {
+    color: blueviolet;
+    list-style-position: inside;
+    background-color: aqua;
+    display: flex;
+    display: inline-block;
+    list-style: none;
+    padding: 2px;
+    width: 10vw;
+    border: 2px solid black;
+
+  }
+
+  nav>ul li>a:hover {
+    color: brown
+  }
+  .go{
+    width:30vw;
+    height:10vh;
+    outline: 2px solid red;
+    outline-style:dashed;
+  overflow:  hidden auto;
+  margin:25px
+
+  }
+</style>
 
 <body>
-  <center><h1>Form for BookmarkStudios</h1></center>
-    <form action="/index2.html">
-        <div>
-            <label for="name">Name :</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        </div>
-        <br>
-        <div>
-            <label for="no.">Number :</label>
-            <input type="number" id="no." name="no." placeholder="Enter your number" required>
-        </div>
-        <br>
-        <div>
-            Select your region :
-            <input type="radio" id="region" name="region" value="North India" required>
-            <label for="region">North India</label>
-            <input type="radio" id="reg" name="region" value="South India" required>
-            <label for="reg">South India</label>
-        </div>
-        <br>
-        <div>
-            Select your gender:
-            <select id="gender" required>
-                <option value="" disabled selected>Select gender</option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="None">None</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <label for="add">Email :</label>
-            <input type="email" id="add" name="email add" placeholder="Enter your email" required>
-        </div>
-        <br>
-        <div>
-            <button type="submit" action="/index2.html">Submit</button>
-    </form>
-    </body>
+  <nav>
+    <ul>
+      <li><a href="https://www.google.com" target="_blank">Home</a></li>
+      <li><a href="https://www.facebook.com" target="_blank">About me</a></li>
+      <li><a href="https://www.netflix.com" target="_blank">Resume</a></li>
+      <div class="go">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia inventore velit ea earum sunt saepe ipsam, numquam aliquam, porro obcaecati sequi. Nulla nisi necessitatibus voluptatibus, placeat est earum culpa officiis explicabo odit ad possimus debitis, quam architecto, sint accusantium. Totam, id blanditiis ipsum, maxime odit doloribus pariatur inventore soluta explicabo voluptatem, optio neque fuga sapiente debitis?
+      </div>
+    </ul>
+  </nav>
+
+</body>
 
 </html>
